@@ -1,6 +1,6 @@
-# Nome do Projeto
+# Misout-Brasil
 ## Descrição
-Aplicativo para [descrever objetivo], focado em [público-alvo].
+Um Site que visa auxiliar a criação de roteiros de viagens no Brasil.
 ## Tecnologias Utilizadas
 - HTML5, CSS3, JavaScript
 - Node.js
@@ -10,9 +10,10 @@ Explicação da divisão de pastas.
 ## Protótipo
 Link para o protótipo no Figma: [link]
 ## Integrantes
-- Fulano – Front-end
-- Ciclano – Back-end
-- Beltrano – Design e Documentação
+- Anna Clara – Full Stack
+- Isabella – Full Stack
+- Maria Laura – Full Stack
+- Rodrigo - Full Stack
 ## Status do Projeto
 Em desenvolvimento
 Primeira versão estimada para: [data]
