@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #F8F3D9;
+    font-family: "Joan", serif;
+}
+
+.cabecalho
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B28A;
+    padding:15px 40px;
+    gap: 150px
+}
+
+.titulo
+{
+    font-size: 45px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-family: "Joan", serif;
+}
+
+.menu
+{
+    display: flex;
+}
+
+.link
+{
+    font-size: 30px;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Joan", serif;
+    color:black;
+}
+
+.apresentacao_texto
+{
+    font-size: 30px;
+    font-family: "Joan", serif;
+    text-align: center;
+    max-width: 1173px;
+    font-weight: 500;
+}
+
+.form_busca
+{
+    margin:40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input_container
+{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    width: 500px;
+    max-width: 90%;
+}
+
+.input_container input{
+    border: none;
+    outline: none;
+    flex:1;
+    font-size: 20px;
+    font-family: "Joan", serif;
+}
+.apresentacao_frase
+{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.imagem{
+    display: block;
+    margin: 20px auto;
+    max-width: 500px;
+    width: 80%;
+}

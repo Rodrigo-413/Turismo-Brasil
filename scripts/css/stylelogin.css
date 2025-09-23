@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #F8F3D9;
+    font-family: "Joan", serif;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:40px;
+}
+
+.titulo
+{
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.card_login
+{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 565px;
+    height: 733px;
+    text-align: center;
+}
+
+.texto_login
+{
+    font-size: 55px;
+    margin-top: 40px;
+}
+
+.form_login
+{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.input_login img{
+    width: 43px;
+    height: 43px;
+}
+.input_login
+{
+    margin-top:45px;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    border-radius: 20px;
+    padding: 12px 15px;
+
+}
+
+.input_login i{
+    margin-right:10px;
+    color:#555;
+}
+
+.input_login input{
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    flex: 1;
+}
+
+.input_senha
+{
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    border-radius: 20px;
+    padding: 12px 15px;
+    margin-top: 41px;
+}
+
+.input_senha i{
+    margin-right:10px;
+    color:#555;
+}
+
+.input_senha input{
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    flex: 1;
+}
+
+.input_senha img{
+    width: 43px;
+    height: 43px;
+}
+.link_senha
+{
+    font-size: 18px;
+    color:#444;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+
+}
+
+.btn_login
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ddd;
+    border: none;
+    padding: 12px;
+    border-radius: 40px;
+    font-size: 24px;
+    cursor:pointer;
+    width: 206px;
+    height: 49px;
+    margin:auto;
+    font-family: "Joan", serif;
+}
+
+.entrar_com
+{
+    font-size: 22px;
+}
+
+.redes_sociais
+{
+    display: flex;
+    justify-content: center;
+    gap:54px;
+    margin-top: 22px;
+}
+
+.redes_sociais img
+{
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.redes_sociais:hover
+{
+    transform: scale(1.1);
+}
+
+.cadastro
+{
+    font-family: "Joan", serif;
+    font-size: 22px;
+}
