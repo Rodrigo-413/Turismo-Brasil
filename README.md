@@ -8,7 +8,7 @@ Um Site que visa auxiliar a criação de roteiros de viagens no Brasil.
 ## Estrutura do Projeto
 Explicação da divisão de pastas.
 ## Protótipo
-Link para o protótipo no Figma: [link]
+Link para o protótipo no Figma: [https://www.figma.com/design/bz3RVS8uEbOIusL3cuMZQO/MISOUT?node-id=0-1&p=f&t=7cqBkPVKmuVuW374-0]
 ## Integrantes
 - Anna Clara – Full Stack
 - Isabella – Full Stack
