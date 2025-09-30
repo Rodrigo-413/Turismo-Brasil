@@ -14,6 +14,7 @@ Link para o protótipo no Figma: [https://www.figma.com/design/bz3RVS8uEbOIusL3c
 - Isabella – Full Stack
 - Maria Laura – Full Stack
 - Rodrigo - Full Stack
+- Nicole - Full Stack
 ## Status do Projeto
 Em desenvolvimento
 Primeira versão estimada para: [data]
