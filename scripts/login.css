@@ -202,6 +202,8 @@ header{
     justify-content: center;
     gap:54px;
     margin-top: 22px;
+    text-align: center;
+    margin: auto;
 }
 
 .redes_sociais img
