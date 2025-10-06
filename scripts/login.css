@@ -1,15 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
-
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     background-color: #F8F3D9;
     font-family: "Joan", serif;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    height: 140px;
+}
+
+.cabecalho
+{   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B28A;
+    gap: 150px;
+    width: 100%;
+}
+
+.titulo
+{
+    margin: 0;
+    font-size: 45px;
+    text-align: center;
+    margin-right: 50px;
+    font-weight: bold;
+    font-family: "Joan", serif;
+}
+
+.menu
+{
+    display: flex;
+}
+
+.link
+{
+    font-size: 30px;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Joan", serif;
+    color:black;
+}
+
+.logo
+{
+    font-size:45px;
+    font-weight: bold;
+    font-family: "Joan", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a
+{
+    color: black;
+    text-decoration: none;
+}
+.menu
+{
+    display: flex;
+}
+
+.link
+{
+    font-size: 30px;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Joan", serif;
+    color:black;
 }
 
 .container
@@ -17,7 +86,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:40px;
 }
 
 .titulo
