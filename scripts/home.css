@@ -10,33 +10,47 @@ body{
     font-family: "Joan", serif;
 }
 
+header{
+    margin: 0;
+    padding: 0;
+    height: 140px;
+}
+
 .cabecalho
-{
+{   
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: #B9B28A;
-    padding:15px 40px;
-    gap: 150px
+    padding:auto;
+    gap: 165px;
+    width: 100%;
 }
 
-.titulo
+.logo
 {
-    font-size: 45px;
-    margin-right: 50px;
+    font-size:45px;
     font-weight: bold;
     font-family: "Joan", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a
+{
+    color: black;
+    text-decoration: none;
 }
 
 .menu
 {
     display: flex;
+    gap: 70px;
 }
 
 .link
 {
     font-size: 30px;
-    margin-left: 40px;
     text-decoration: none;
     font-weight: 500;
     font-family: "Joan", serif;
