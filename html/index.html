@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISOUT</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo"><a href="index.html">MISOUT</a></h1>
+        <nav class="menu">
+            <a href="index.html" class="link">Início</a>
+            <a href="login.html" class="link">Entrar</a>
+            <a href="planos.html" class="link">Planos</a>
+            <a href= "inscricao.html" class="link">Inscreva-se</a> 
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao_frase">
+            <h3 class="apresentacao_texto">Bem-vindo ao seu ponto de partida para aventuras inesquecíveis.Viajar é viver histórias e, aqui começa a sua próxima!</h3>
+        </section>  
+
+        <p class="texto">O <strong>Misout</strong> ajudará você a descobrir mais sobre o destino dos seus sonhos!
+            <br>Para começar a pesquisa basta selecionar o destino no botão abaixo:
+        </p>
+    
+        <section class="busca">
+            <form>
+                <span class="icone">🔍</span>
+                <label class="texto">Selecione aqui o destino: </label>
+                <select name="plataforma" required="required" class="caixa_texto" id="pagina" onchange="irParaPagina()">
+                    <option value="" class="texto"></option>
+                    <option value="sao_paulo-sp.html" class="texto">São Paulo-SP</option>
+                    <option value="campinas.html" class="texto">Campinas-SP</option>
+                    <option value="camposjordao.html" class="texto">Campos do Jordão-SP</option>
+                    <option value="ubatuba.html" class="texto">Ubatuba-SP</option>
+                </select>
+            </form>
+        </section>
+        
+        <img class="imagem" src="../assets/brasil.png" alt="mapa do Brasil">
+
+        <section class="apresentacao_frase">
+            <p class="texto">Não se esqueça de se cadastrar no <strong>Misout</strong> para estar sempre recebendo nossas atualizações!</p>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img class="img" src="../assets/LogoMisout.png">
+        </div>    
+
+        <div>
+            <p >Precisa de algum suporte? </p>
+            <p >Chame a nossa equipe pelos contatos ao lado!</p>
+        </div>
+
+        <div>
+            <p >Email: Misout@host.com</p>
+            <p >Telefone: (19)4002-8922</p>
+        </div>
+    </footer>
+    <script src="/javascript/index.js"></script>
+</body>
+</html>

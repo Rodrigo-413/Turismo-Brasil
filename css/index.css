@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F8F3D9;
+    font-family: "Joan", serif;
+}
+
+.cabecalho
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B28A;
+    padding:15px 40px;
+    gap: 150px;
+    
+}
+
+.logo
+{
+    font-size:45px;
+    font-weight: bold;
+    font-family: "Joan", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.menu
+{
+    display: flex;
+    gap: 70px
+}
+
+.link
+{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Joan", serif;
+    color:black;
+}
+
+.apresentacao_texto
+{
+    font-size: 30px;
+    font-family: "Joan", serif;
+    text-align: center;
+    max-width: 1173px;
+    font-weight: 500;
+}
+
+.form_busca
+{
+    margin:40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input_container
+{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    width: 500px;
+    max-width: 90%;
+}
+
+.input_container input{
+    border: none;
+    outline: none;
+    flex:1;
+    font-size: 20px;
+    font-family: "Joan", serif;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.busca form
+{
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding:8px 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 600px;
+    margin-top: 20px;
+}
+
+.icone {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.texto{
+    font-family: "Joan", serif;
+    font-size: 20px;
+}
+
+.caixa_texto{
+    font-family: "Joan", serif;
+    font-size: 20px;
+    cursor:pointer;
+    margin-left: 30px;
+    width: 30%;
+}
+
+.apresentacao_frase
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.imagem{
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    width: 80%;
+}
+
+.texto{
+    text-align: center;
+    font-family: "Joan", serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+strong{
+    color:#FFCD10
+}
+
+.btn
+{
+    margin-top: 25px;
+    justify-content: center;
+    align-content: center;
+    background: #FFF28D;
+    border: none;
+    padding:12px;
+    border-radius: 25px;
+    font-size: 24px;
+    cursor:pointer;
+    width: 250px;
+    height: 50px;
+    font-family: "Joan", serif;
+}
+
+footer{
+    background-color: #B9B28A;
+    margin-top: auto;
+    display:flex;
+    justify-content:space-around;
+    font-family: "Joan", serif;
+    font-size: 20px;
+    height: 110px;
+}
+
+footer p{
+    margin-top: 15px;
+}
+
+.img{
+    max-width: 240px;
+    width: 40%;
+}
+
+@media (max-width: 1024px) {
+    .cabecalho {
+        gap: 60px;
+        padding: 15px 20px;
+    }
+
+    .menu .link {
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+}
+
+/* Telas até 768px (tablets) */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .menu .link {
+        font-size: 22px;
+    }
+
+    .apresentacao_texto {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+
+    .texto {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .busca form {
+        width: 90%;
+    }
+
+    .caixa_texto {
+        width: 50%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    footer .img {
+        width: 150px;
+    }
+}
+
+/* Telas até 480px (celulares) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 28px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu .link {
+        font-size: 20px;
+    }
+
+    .apresentacao_texto {
+        font-size: 20px;
+    }
+
+    .texto {
+        font-size: 18px;
+    }
+
+    .busca form {
+        flex-direction: column;
+        gap: 10px;
+        width: 95%;
+    }
+
+    .caixa_texto {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .imagem {
+        max-width: 260px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    footer .img {
+        width: 120px;
+    }
+}

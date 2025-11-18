@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISOUT</title>
+    <link rel="stylesheet" href="../css/inscricao.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <h1 class="logo"><a href="index.html">MISOUT</a></h1>
+            <nav class="menu">
+                <a href="index.html" class="link">Início</a>
+                <a href="login.html" class="link">Entrar</a>
+                <a href="planos.html" class="link">Planos</a>
+                <a href= "inscricao.html" class="link">Inscreva-se</a>  
+            </nav>
+        </header>
+
+        <p class="texto"> Tem um lugar especial na sua cidade que merece ser conhecido?
+            Faça a inscrição da sua localidade e ajude a valorizar pontos turísticos únicos.<br>
+            Compartilhe essa riqueza e mostre ao mundo as belezas escondidas do seu município!
+        </p>
+        <section class="formulario">
+            <form class="caixas_texto">
+                <h2>Endereço</h2>
+                <div class="caixaUm">
+                    <p class="texto_simples">Cidade</p>
+                    <input type="text" class="inputs" id="city">
+
+                    <p class="texto_simples">UF</p>
+                    <input type="text" class="inputs" id="UF">
+                </div>
+
+                <div class="caixaDois">
+                    <p class="texto_simples">Tipo de Turismo</p>
+                    <input type="text" class="inputs" id="tType">
+                </div>
+
+                <div class="caixaTres">
+                    <p class="texto_simples">Endereço</p>
+                    <input type="text" class="inputs" id="adress">
+
+                    <p class="texto_simples">Ponto de Referência</p>
+                    <input type="text" class="inputs" id="refPoint">
+                </div>
+            </form>
+        </section>    
+
+        <section class="formulario">
+            <form class="caixas_texto">
+                <h2>Horários e datas</h2>
+                <div class="caixaUm">
+                    <p class="texto_simples">Dias de funcionamento: <br><br></p>
+                    <input type="checkbox" id="seg"  value="seg" name="dias">
+                    <label for="seg"> Segunda</label><br>
+                    <input type="checkbox" id="ter" value="ter" name="dias">
+                    <label for="ter"> Terça</label><br>
+                    <input type="checkbox" id="qua"  value="qua" name="dias">
+                    <label for="qua"> Quarta</label><br>
+                    <input type="checkbox" id="qui"  value="qui" name="dias">
+                    <label for="qui"> Quinta</label><br>
+                    <input type="checkbox" id="sex"  value="sex" name="dias">
+                    <label for="sex"> Sexta</label><br>
+                    <input type="checkbox" id="sab"  value="sab" name="dias">
+                    <label for="sab"> Sabado</label><br>
+                    <input type="checkbox" id="dom"  value="dom" name="dias">
+                    <label for="dom"> Domingo</label><br>
+                </div>
+
+                <div class="caixaUm">
+                    <p class="texto_simples">Preço mínimo</p>
+                    <input type="text" required class="inputs">
+                </div>
+
+                <div class="caixaUm">
+                    <p class="texto_simples">Necessidade de ingresso</p>
+                    <input type="radio" id="sim" value="sim" name="ingresso">
+                    <label for="sim">Sim</label><br>
+                    <input type="radio" id="nao" value="nao" name="ingresso">
+                    <label for="nao">Não</label><br>
+                </div>
+            </form>
+        </section>
+
+        <button type="submit" class="btn" >Enviar Inscrição</button>
+
+        <p class="texto">O turismo é uma das formas mais bonitas de valorizar a cultura, a natureza e as histórias de cada região.
+            Muitas vezes, locais incríveis ficam escondidos <br> e não recebem a atenção que merecem.
+            Ao compartilhar e publicar novos pontos turísticos, você ajuda a fortalecer a identidade da sua cidade.<br>
+            Além disso, contribui para o desenvolvimento econômico e cultural da comunidade local.<br>
+            Incentive essa ideia: cadastre aquele lugar especial e mostre ao mundo sua riqueza!</p>
+    </main>
+
+    <footer>
+        <div>
+            <img class="img" src="../assets/LogoMisout.png">
+        </div>    
+
+        <div>
+            <p >Precisa de algum suporte? </p>
+            <p >Chame a nossa equipe pelos contatos ao lado!</p>
+        </div>
+
+        <div>
+            <p >Email: Misout@host.com</p>
+            <p >Telefone: (19)4002-8922</p>
+        </div>
+    </footer>
+</body>
+
+</html>

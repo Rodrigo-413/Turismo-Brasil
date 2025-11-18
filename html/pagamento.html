@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISOUT</title>
+    <link rel="stylesheet" href="../css/pagamento.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <h1 class="logo"><a href="index.html">MISOUT</a></h1>
+            <nav class="menu">
+                <a href="index.html" class="link">Início</a>
+                <a href="login.html" class="link">Entrar</a>
+                <a href="planos.html" class="link">Planos</a>
+                <a href= "inscricao.html" class="link">Inscreva-se</a>   
+            </nav>
+        </header>
+
+        <h2 class="texto">Complete o cadastro para começar sua jornada <strong>MISOUT</strong></h2>
+        <form class="caixas_texto">
+            <div class="caixaUm">
+                <p class="texto_simples">Nome Completo</p>
+                <input type="text" class="inputs">
+                <p class="texto_simples">E-mail</p>
+                <input type="text" class="inputs">
+            </div>
+
+            <div class="caixaDois">
+                <p class="texto_simples">Celular</p>
+                <input type="text" class="inputs">
+            </div>
+
+            <div class="caixaTres">
+                <p class="texto_simples">CPF/CNPJ</p>
+                <input type="text" class="inputs" id="caixa_texto"><br>
+                <input type="checkbox" id="estrangeiro" value="estrangeiro" class="input_radio">
+                <label for="estrangeiro" class="texto_simples">Sou Estrangeiro(a)</label>
+            </div>
+        </form>
+
+        <h3 class="texto">Como será o pagamento ?</h3>
+        <section class="botoes">
+                <button type="submit" class="btn" id="cartao">
+                    <img src="../assets/cartao.png" alt="um cartao" class="imagem">
+                    CARTÃO
+                </button>
+            
+                <button type="submit" class="btn" id="pix">
+                    <img src="../assets/pix.png" alt="Pix" class="imagem">
+                    PIX
+                </button>
+        </section>
+
+        <section >
+            <form id="forma_cartao" class="caixas_texto">
+                <div class="caixaUm">
+                    <p class="texto_simples">Número</p>
+                    <input type="text" class="inputs">
+
+                    <p class="texto_simples">Credito ou Debito?</p>
+                    <input type="text" class="inputs">
+                </div>
+
+                <div class="caixaDois">
+                    <p class="texto_simples">Validade</p>
+                    <input type="text" class="inputs">
+                    <p class="texto_simples">CVV</p>
+                    <input type="text" class="inputs">
+                </div>
+
+                <div class="caixaTres">
+                    <button class="btn_form" id="voltar">Voltar</button>
+                    <button type="submit" class="btn_form" >Finalizar compra</button>
+                </div>
+            </form>
+        </section>
+
+        <section >
+            <form class="caixas_texto" id="forma_pix">
+                <p>Aqui fica o <strong>link ou Qr-code</strong></p>
+                <button class="btn_form" id="voltar">Voltar</button>
+                <button class="btn_form" type="submit">Finalizar compra</button>
+            </form>
+        </section>    
+
+        <script src="../javascript/pagamento.js"></script>
+
+    </main>
+
+    <footer>
+        <div>
+            <img class="img" src="../assets/LogoMisout.png">
+        </div>    
+
+        <div>
+            <p >Precisa de algum suporte? </p>
+            <p >Chame a nossa equipe pelos contatos ao lado!</p>
+        </div>
+
+        <div>
+            <p >Email: Misout@host.com</p>
+            <p >Telefone: (19)4002-8922</p>
+        </div>
+    </footer>
+</body>
+
+</html>

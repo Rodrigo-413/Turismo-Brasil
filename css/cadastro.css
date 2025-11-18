@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #FFFFFF;
+    font-family: "Joan", serif;
+}
+
+.titulo
+{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Joan", serif;
+    
+}
+
+.titulo a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.input_nome img{
+    width: 43px;
+    height: 43px;
+}
+.input_nome
+{
+    margin-top:35px;
+    display: flex;
+    background: #ddd;
+    border-radius: 20px;
+    padding: 12px 15px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.input_nome i{
+    margin-right:10px;
+    color:#555;
+}
+
+.input_nome input{
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    flex: 1;
+}
+
+.input_login img{
+    width: 43px;
+    height: 43px;
+}
+.input_login
+{
+    margin-top:35px;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    border-radius: 20px;
+    padding: 12px 15px;
+    justify-content: center;
+    width: 90%;
+
+}
+
+.input_login i{
+    margin-right:10px;
+    color:#555;
+}
+
+.input_login input{
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    flex: 1;
+}
+
+.input_senha
+{
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    border-radius: 20px;
+    padding: 12px 15px;
+    margin-top: 35px;
+    justify-content: center;
+    width: 90%;
+}
+
+.input_senha i{
+    margin-right:10px;
+    color:#555;
+}
+
+.input_senha input{
+    border:none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+    flex: 1;
+}
+
+.input_senha img{
+    width: 43px;
+    height: 43px;
+}
+
+.entrar_com
+{
+    font-size: 22px;
+}
+
+.redes_sociais
+{
+    display: flex;
+    justify-content: center;
+    gap:54px;
+    margin-top: 22px;
+}
+
+.redes_sociais img
+{
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.redes_sociais:hover
+{
+    transform: scale(1.1);
+}
+
+.btn_login
+{
+    margin-top: 25px;
+    align-items: center;
+    background: #FFF28D;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 24px;
+    cursor:pointer;
+    width: 206px;
+    height: 49px;
+    font-family: "Joan", serif;
+}
+
+.espaco_cores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:40px;
+    padding:10px 50;
+    height: 100vh;
+    text-align: center;
+}
+
+.colorida_fundo{
+    height: 100vh;
+    width: 200px;
+    background-color: #F8F3D9;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.colorida_texto{
+    display:flex;
+    font-family: "Joan", serif;
+    justify-content: space-around;
+    align-items: center;
+    gap:40px;
+    padding:10px 50;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.sem_cor{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.linha{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.linha::before{
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: 0;
+    width: 95%;
+    height: 1px;
+    background-color: #000;
+    z-index: -1;
+}
+
+.linha span{
+    background-color: #FFFFFF;
+    padding: 0 10px;
+}
+
+.imagem{
+    align-items: center;
+    width: 105%;
+    height: 85%;
+}
+
+#figura {
+  display: inline-block;
+  position: relative;
+}
+
+#figura figcaption {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  font-size: 40px;
+  color: black;
+}
+
+footer{
+    background-color: #B9B28A;
+    display:flex;
+    justify-content:space-around;
+    font-family: "Joan", serif;
+    font-size: 20px;
+    height: 110px;
+}
+
+footer p{
+    margin-top: 15px;
+}
+
+.img{
+    max-width: 240px;
+    width: 40%;
+}

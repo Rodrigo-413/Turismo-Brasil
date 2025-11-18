@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #F8F3D9;
+    font-family: "Joan", serif;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    height: 140px;
+}
+
+strong{
+    color:#FFCD10
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:40px;
+}
+
+.cabecalho
+{   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B28A;
+    padding:15px 40px;
+    gap: 150px;
+    width: 100%;
+}
+
+.logo
+{
+    font-size:45px;
+    font-weight: bold;
+    font-family: "Joan", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.menu
+{
+    display: flex;
+    gap: 70px;
+}
+
+.link
+{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Joan", serif;
+    color:black;
+}
+
+.texto{
+    text-align: center;
+    font-size: 25px;
+}
+
+.texto_simples{
+    font-family: "Joan", serif;
+}
+
+.inputs{
+    margin-bottom:35px;
+    background: #B9B28A;
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 85%;
+}
+
+.inputs input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 24px;
+}
+
+.input_radio{
+    margin-bottom:35px;
+}
+
+#forma_cartao{
+    display:none;
+}
+
+#forma_pix{
+    display:none;
+}
+
+.caixas_texto{
+    display:flex;
+    font-family: "Joan", serif;
+    justify-content: space-around;
+    align-items: center;
+    gap:15px;
+    background: white;
+    border-radius: 20px;
+    padding: 12px 15px;
+    margin-top:25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#caixa_texto:disabled{
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+}
+
+.caixaUm{
+    padding: 12px 30px;
+    margin-top: 35px;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.caixaDois{
+    padding: 12px 30px;
+    margin-top: 35px;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+
+.caixaTres{
+    padding: 12px 30px;
+    margin-top: 35px;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+
+.botoes{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn{
+    background: #B9B28A;
+    font-family: "Joan", serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor:pointer;
+    width: 190px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.btn_form{
+    background: #B9B28A;
+    font-family: "Joan", serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor:pointer;
+    width: 150px;
+    height: 75px;
+    margin-right: 15px;
+}
+
+option{
+    margin-bottom:35px;
+    background: #B9B28A;
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 85%;
+}
+
+.imagem{
+    width: 30px;
+    height: 26px;
+}
+
+footer{
+    background-color: #B9B28A;
+    display:flex;
+    justify-content:space-around;
+    font-family: "Joan", serif;
+    font-size: 20px;
+    height: 110px;
+}
+
+footer p{
+    margin-top: 15px;
+}
+
+.img{
+    max-width: 240px;
+    width: 40%;
+}
+
+/* Telas até 1024px */
+@media (max-width: 1024px) {
+    .cabecalho {
+        gap: 80px;
+        padding: 15px 20px;
+    }
+
+    .menu .link {
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    .caixas_texto {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .caixaUm, .caixaDois, .caixaTres {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .btn {
+        width: 160px;
+        height: 85px;
+        font-size: 16px;
+    }
+
+    .btn_form {
+        width: 130px;
+        height: 65px;
+        font-size: 18px;
+    }
+}
+
+/* Tablets até 768px */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .menu .link {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .texto {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .caixas_texto {
+        flex-direction: column;
+    }
+
+    .caixaUm, .caixaDois, .caixaTres {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btn {
+        width: 70%;
+        max-width: 300px;
+        height: 90px;
+    }
+
+    .btn_form {
+        width: 70%;
+        max-width: 300px;
+        height: 60px;
+    }
+}
+
+/* Celulares até 480px */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 26px;
+    }
+
+    .menu .link {
+        font-size: 18px;
+    }
+
+    .texto {
+        font-size: 18px;
+    }
+
+    .inputs {
+        width: 95%;
+    }
+
+    .btn {
+        width: 85%;
+        height: 80px;
+        font-size: 14px;
+    }
+
+    .btn_form {
+        width: 85%;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    footer img {
+        width: 120px;
+    }
+}
