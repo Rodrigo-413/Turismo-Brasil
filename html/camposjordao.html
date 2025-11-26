@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campos do Jordão - MISOUT</title>
-    <link rel="stylesheet" href="/css/camposdojordao.css">
+    <title>Campinas - MISOUT</title>
+    <link rel="stylesheet" href="../css/cidades.css"> <!-- Mesmo CSS -->
 </head>
 <body>
     <header class="cabecalho">
@@ -13,23 +13,51 @@
             <a href="index.html" class="link">Início</a>
             <a href="login.html" class="link">Entrar</a>
             <a href="planos.html" class="link">Planos</a>
-            <a href= "inscricao.html" class="link">Inscreva-se</a>
+            <a href="inscricao.html" class="link">Inscreva-se</a> 
         </nav>
     </header>
 
-    <main>
-        <h1 class="titulo">CAMPOS DO JORDÃO</h1>
-        <h2 class="subtitulo"></h2>
+    <main class="pagina-cidade">
+        <section class="cabecalho-cidade">
+            <h1 class="titulo-cidade">CAMPOS DO JORDÃO</h1> 
+            <h2 class="subtitulo-cidade"></h2> 
+            <p class="descricao-cidade">Descubra os melhores pontos turísticos de Campos Do Jordão</p>
+        </section>
 
-        <div class="botoes">
-            <button class="botao">Museus</button>
-            <button class="botao">Estádios</button>
-            <button class="botao">Shoppings</button>
-            <button class="botao">Eventos</button>
-            <button class="botao">Teatros</button>
-            
-        </div>
+        <section class="filtros-categoria">
+            <h3 class="filtros-titulo">Explore por categoria:</h3>
+            <div id="botoes-categoria" class="botoes-categoria">
+                <div class="carregando">Carregando categorias...</div>
+            </div>
+        </section>
+
+        <section class="pontos-turisticos">
+            <div id="pontos-container" class="pontos-container">
+                <div class="carregando">Carregando pontos turísticos...</div>
+            </div>
+        </section>
+
+        <section class="estatisticas">
+            <div class="stat-card">
+                <span class="stat-number" id="total-pontos">0</span>
+                <span class="stat-label">Pontos Turísticos</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="total-categorias">0</span>
+                <span class="stat-label">Categorias Ativas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="categoria-atual">Todos</span>
+                <span class="stat-label">Categoria Atual</span>
+            </div>
+        </section>
     </main>
 
+    <script src="../javascript/cidade-script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            cidadeCtrl.inicializar();
+        });
+    </script>
 </body>
 </html>

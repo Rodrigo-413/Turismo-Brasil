@@ -1,0 +1,72 @@
+/*
+
+-- VER TODOS OS USUÁRIOS CADASTRADOS
+SELECT id, nome_completo, email, tipo_plano, data_cadastro 
+FROM usuarios 
+ORDER BY data_cadastro DESC;
+
+-- VER TODAS AS ASSINATURAS ATIVAS
+SELECT a.id, u.nome_completo, u.email, a.tipo_plano, a.valor, a.data_inicio, a.data_fim, a.status 
+FROM assinaturas a 
+JOIN usuarios u ON a.usuario_id = u.id 
+WHERE a.status = 'ativa' 
+ORDER BY a.data_inicio DESC;
+
+-- VER INSCRIÇÕES PENDENTES DE APROVAÇÃO
+SELECT pt.id, pt.nome, pt.endereco, pt.tipo_turismo, d.nome as cidade, d.estado, pt.data_cadastro 
+FROM pontos_turisticos pt 
+JOIN destinos d ON pt.destino_id = d.id 
+WHERE pt.aprovado = FALSE 
+ORDER BY pt.data_cadastro DESC;
+
+-- VER PONTOS TURÍSTICOS APROVADOS
+SELECT pt.id, pt.nome, pt.endereco, c.nome as categoria, d.nome as cidade, pt.aprovado 
+FROM pontos_turisticos pt 
+JOIN destinos d ON pt.destino_id = d.id 
+JOIN categorias c ON pt.categoria_id = c.id 
+WHERE pt.aprovado = TRUE 
+ORDER BY d.nome, c.nome;
+
+-- VER CATEGORIAS E SUAS QUANTIDADES
+SELECT c.nome, c.icone, COUNT(pt.id) as total_pontos 
+FROM categorias c 
+LEFT JOIN pontos_turisticos pt ON c.id = pt.categoria_id AND pt.aprovado = TRUE 
+GROUP BY c.id, c.nome, c.icone 
+ORDER BY total_pontos DESC;
+
+-- VER DESTINOS E SEUS PONTOS TURÍSTICOS
+SELECT d.nome, d.estado, COUNT(pt.id) as total_pontos 
+FROM destinos d 
+LEFT JOIN pontos_turisticos pt ON d.id = pt.destino_id AND pt.aprovado = TRUE 
+GROUP BY d.id, d.nome, d.estado 
+ORDER BY total_pontos DESC;
+
+
+
+-- APROVAR UMA INSCRIÇÃO ESPECÍFICA
+UPDATE pontos_turisticos SET aprovado = TRUE WHERE id = [ID_DA_INSCRICAO];
+
+-- APROVAR TODAS AS INSCRIÇÕES PENDENTES
+UPDATE pontos_turisticos SET aprovado = TRUE WHERE aprovado = FALSE;
+
+-- APROVAR INSCRIÇÕES DE UMA CIDADE ESPECÍFICA
+UPDATE pontos_turisticos pt 
+JOIN destinos d ON pt.destino_id = d.id 
+SET pt.aprovado = TRUE 
+WHERE d.nome = 'São Paulo' AND pt.aprovado = FALSE;
+
+-- APROVAR INSCRIÇÕES DE UMA CATEGORIA ESPECÍFICA
+UPDATE pontos_turisticos 
+SET aprovado = TRUE 
+WHERE categoria_id = [ID_DA_CATEGORIA] AND aprovado = FALSE;
+
+-- EXCLUIR UMA INSCRIÇÃO ESPECÍFICA
+DELETE FROM pontos_turisticos WHERE id = [ID_DA_INSCRICAO];
+
+-- EXCLUIR TODAS AS INSCRIÇÕES NÃO APROVADAS
+DELETE FROM pontos_turisticos WHERE aprovado = FALSE;
+
+-- EXCLUIR INSCRIÇÕES DE UM USUÁRIO ESPECÍFICO
+DELETE FROM pontos_turisticos WHERE usuario_cadastrou = [ID_DO_USUARIO];
+
+*/

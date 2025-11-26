@@ -79,45 +79,6 @@ body{
     width: 85%;
 }
 
-.inputs input{
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 24px;
-}
-
-.caixas_texto{
-    display:flex;
-    font-family: "Joan", serif;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.caixaUm{
-    padding: 12px 30px;
-    margin-top: 35px;
-    justify-content: center;
-    width: 50%;
-    align-items: center;
-    margin-left: 5%;
-}
-
-.caixaDois{
-    padding: 12px 30px;
-    margin-top: 35px;
-    justify-content: center;
-    width: 50%;
-    align-items: center;
-}
-
-.caixaTres{
-    padding: 12px 30px;
-    margin-top: 35px;
-    justify-content: center;
-    width: 50%;
-    align-items: center;
-}
-
 .formulario{
     display: flex;
     justify-content: space-around;
@@ -155,15 +116,59 @@ footer{
     height: 110px;
 }
 
-footer p{
-    margin-top: 15px;
-}
-
 .img{
     max-width: 240px;
     width: 40%;
 }
 
+.inputs {
+    border: 2px solid #B9B28A;
+    font-size: 16px;
+    font-family: "Joan", serif;
+    color: #000;
+}
+
+/* Seta customizada para o select */
+select.inputs {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 45px;
+}
+
+/* Estados de foco - mantendo a estética original */
+.inputs:focus {
+    outline: none;
+    border-color: #8a7f5c;
+    box-shadow: 0 0 5px rgba(185, 178, 138, 0.5);
+}
+
+/* Indicador visual para campos obrigatórios */
+.inputs:required {
+    border-left: 4px solid #e74c3c;
+}
+
+.inputs:required:valid {
+    border-left: 4px solid #2ecc71;
+}
+
+/* Placeholder com estilo compatível */
+.inputs::placeholder {
+    color: #7a7152;
+    font-style: italic;
+}
+
+/* Melhoria sutil no botão (mantendo cores originais) */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #8a7f5c;
+    transform: translateY(-2px);
+}
 
 /* Telas até 1024px */
 @media (max-width: 1024px) {
