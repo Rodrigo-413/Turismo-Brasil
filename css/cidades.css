@@ -178,17 +178,81 @@ main {
 
 /* Badge de categoria com ícone */
 .categoria-badge {
-    background: #3498db;
-    color: white;
+    background: #B9B28A;
+    color: black;
     padding: 6px 12px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    border-style: solid;
+    border-color: #aaa271;
+    font-size: 1rem;
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
 }
 
+.botao-categoria{
+    background-color: #c5bf99;
+    border-radius: 5px;
+    border-color: #aaa271;
+    font-family: "Joan", serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.btn-rota{
+    background-color: #c5bf99;
+    border-radius: 5px;
+    border-color: #aaa271;
+    font-family: "Joan", serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.btn-ver-mais{
+    background-color: #c5bf99;
+    border-radius: 5px;
+    border-color: #aaa271;
+    font-family: "Joan", serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+/*titulo subtitulo*/
+.descricao-cidade{
+    font-family: "Joan", serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ponto-nome{
+    margin-top:5px;
+}
+
+.filtros-titulo{
+    margin-top:5px;
+}
+
+.estatisticas{
+    font-family: "Joan", serif;
+    font-size: 17px;
+    margin-top:10px;
+}
+
+.card-body{
+    font-family: "Joan", serif;
+    font-size: 17px;
+}
 /* Responsivo para muitos botões */
 @media (max-width: 768px) {
     .botoes-categoria {

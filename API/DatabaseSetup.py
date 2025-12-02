@@ -3,9 +3,9 @@ from mysql.connector import Error
 
 class DatabaseSetup:
     def __init__(self):
-        self.host = 'localhost'
+        self.host = 'localHost'
         self.user = 'root'
-        self.password = '1005'
+        self.password = '16022006'
         self.database = 'misout_db'
     
     def create_connection(self):
@@ -344,9 +344,9 @@ if __name__ == "__main__":
     db_setup = DatabaseSetup()
     
     # Configurações do banco
-    db_setup.host = 'localhost'
+    db_setup.host = 'localHost'
     db_setup.user = 'root'
-    db_setup.password = '1005'
+    db_setup.password = '16022006'
     db_setup.database = 'misout_db'
     
     # Executa o setup completo
