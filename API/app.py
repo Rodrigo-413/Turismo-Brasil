@@ -3,16 +3,17 @@ from flask_cors import CORS
 import mysql.connector
 from mysql.connector import Error
 import bcrypt
+import DB_Config
 
 app = Flask(__name__)
 CORS(app)
 
 def get_connection():
     return mysql.connector.connect(
-        host="localHost",
-        user="root",
-        password="16022006",
-        database="misout_db"
+        host=DB_Config.place["host"],
+        user=DB_Config.place["user"],
+        password=DB_Config.place["password"],
+        database=DB_Config.place["database"]
     )
 
 # --- USUÁRIOS ---

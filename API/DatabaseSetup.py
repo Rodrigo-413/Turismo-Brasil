@@ -1,12 +1,13 @@
 import mysql.connector
 from mysql.connector import Error
+import DB_Config
 
 class DatabaseSetup:
     def __init__(self):
-        self.host = 'localHost'
-        self.user = 'root'
-        self.password = '16022006'
-        self.database = 'misout_db'
+        self.host = DB_Config.place['host']
+        self.user = DB_Config.place['user']
+        self.password = DB_Config.place['password']
+        self.database = DB_Config.place['database']
     
     def create_connection(self):
         """Cria conexão com o MySQL"""
@@ -314,9 +315,9 @@ class DatabaseSetup:
             """)
             
             stats = cursor.fetchall()
-            print("\n📊 ESTATÍSTICAS DOS PONTOS TURÍSTICOS:")
+            print("\nESTATÍSTICAS DOS PONTOS TURÍSTICOS:")
             for cidade, total in stats:
-                status = "✅ COM PONTOS" if total > 0 else "❌ SEM PONTOS"
+                status = "COM PONTOS" if total > 0 else "SEM PONTOS"
                 print(f"  {cidade}: {total} pontos - {status}")
             
             cursor.close()
@@ -342,12 +343,4 @@ class DatabaseSetup:
 
 if __name__ == "__main__":
     db_setup = DatabaseSetup()
-    
-    # Configurações do banco
-    db_setup.host = 'localHost'
-    db_setup.user = 'root'
-    db_setup.password = '16022006'
-    db_setup.database = 'misout_db'
-    
-    # Executa o setup completo
     db_setup.run_setup()
