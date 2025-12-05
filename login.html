@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MISOUT</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <h1 class="logo"><a href="index.html">MISOUT</a></h1>
+            <nav class="menu">
+                <a href="index.html" class="link">Início</a>
+                <a href="login.html" class="link">Entrar</a>
+                <a href="planos.html" class="link">Planos</a>
+                <a href= "inscricao.html" class="link">Inscreva-se</a>  
+            </nav>
+    </header>
+        <h2 class="titulo">Bem-vindo de volta! Entre para começar sua jornada.</h2>
+        <section class="card_login" id="loginForm">
+            <h3 class="texto_login">LOGIN</h3>
+
+            <form action="#" method="post" class="form_login">
+                <div class="input_login">
+                    <input type="email" placeholder="E-MAIL" required id="email">
+                        <img src="../assets/envelope.png" alt="Envelope">
+                </div>
+
+                <div class="input_senha">
+                    <input type="password" placeholder="SENHA" required id="password">
+                        <img src="../assets/cadeado.png" alt="Cadeado">
+                </div>
+                <a href="#" class="link_senha">Esqueceu sua senha?</a>
+
+                <button type="submit" class="btn_login">ENTRAR</button>
+            </form>
+
+            <div id="error-message" class="error hidden">
+                Não foi possivel conectar-se à sua conta. Verifique suas credenciais e tente novamente
+            </div>
+
+            <div class="linha">
+                <span>ou</span>
+            </div>
+
+            <p class="entrar_com">Entrar com:</p>
+            <div class="redes_sociais">
+                <a href="https://facebook.com">
+                    <img src="../assets/face.png" alt="Facebook">
+                </a>
+
+                <a href="https://google.com">
+                    <img src="../assets/google.png" alt="Google">
+                </a>
+
+                <a href="https://apple.com">
+                    <img src="../assets/apple.png" alt="Apple">
+                </a>
+            </div>
+
+            <p class="cadastro">
+                Não tem cadastro? <a href="cadastro.html">Cadastre-se já</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img class="img" src="../assets/LogoMisout.png">
+        </div>    
+
+        <div>
+            <p >Precisa de algum suporte? </p>
+            <p >Chame a nossa equipe pelos contatos ao lado!</p>
+        </div>
+
+        <div>
+            <p >Email: Misout@host.com</p>
+            <p >Telefone: (19)4002-8922</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/login-script.js"></script>
+</body>
+</html>
