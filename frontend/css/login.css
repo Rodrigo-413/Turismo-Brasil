@@ -194,6 +194,20 @@ header{
     font-family: "Joan", serif;
 }
 
+.error {
+    color: #fff;
+    background-color: #e63946;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
 .entrar_com
 {
     font-size: 22px;

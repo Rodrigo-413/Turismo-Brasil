@@ -22,10 +22,13 @@ form.addEventListener('submit', async (e) => {
             // Redireciona para a página inicial após login
             window.location.href = "index.html";
         } else {
-            alert("Erro: " + json.mensagem);
+            const erro = document.getElementById("error-message");
+            erro.classList.remove("hidden");
         }
     } catch (error) {
         console.error("Erro:", error);
-        alert("Erro ao conectar com o servidor");
+        const erro = document.getElementById("error-message");
+        erro.classList.remove("hidden");
     }
 });
+
